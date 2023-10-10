@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
+import { useState } from 'react';
 
 const ANALGESICOS = ["PARACETAMOL", "IBUPROFENO", "NAPROXENO", "DEKETOPROXENO", "DICLOFENACO", "METAMIZOL", "TRAMADOL/PARACETAMOL"]
 const ANTIBIOTICOS = ["AMOXICILINA", "AMOXICILINA/ÁCIDO CLAVULÁNICO", "CLINDAMICINA", "ESPIRAMICINA/METRONIDAZOL", "AZITROMICINA", "CIPROFLOXACINO"]
@@ -17,6 +18,19 @@ export default function Home() {
     var list = searchParams.get('list_name')
     var list_names = lists[list]
 
+    /*
+        Barra de búsqueda
+    */
+    const [search, setSearch] = useState("");
+    const handleChange = (event) => {
+        setSearch(event.target.value);
+    };
+
+    var search_names = list_names.filter((name) => {
+        return (name.toUpperCase().includes(search.toUpperCase())) || (search == "")
+    });
+
+
     return (
         <div className={styles.container}>
             <Head>
@@ -27,7 +41,8 @@ export default function Home() {
             </Head>
             <main>
                 <a className={styles.button_back} href={back}>&#65124; {back_name}</a>
-                {list_names.map((name, index) => (
+                <input type="text" value={search} onChange={handleChange} />
+                {search_names.map((name, index) => (
                     <div key={index}>
                         <button className={styles.item_lista}>{name}</button>
                     </div>
