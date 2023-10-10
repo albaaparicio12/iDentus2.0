@@ -280,3 +280,13 @@
   font-size: 20px;
   padding: 0 10px;
 }
+
+.receta_medica {
+  margin-top: 50px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: " ";
+}
