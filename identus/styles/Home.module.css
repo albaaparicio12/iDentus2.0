@@ -76,8 +76,8 @@
 }
 
 .menuButtons button:hover {
-  color: #539bed;
-  background-color: #bcdcff;
+  color: #ffb120;
+  background-color: #008cff;
 }
 
 
@@ -105,8 +105,8 @@
 }
 
 .farmacosButton button:hover {
-  color: #539bed;
-  background-color: #bcdcff;
+  color: #ffb120;
+  background-color: #008cff;
 }
 
 .grid {
@@ -179,6 +179,7 @@
   top: 3%;
   left: 1%;
   text-decoration: none;
+  text-shadow: #c3c3c3 2px 2px 5px;
 }
 
 .footer {
@@ -210,4 +211,34 @@
 .narrow_pic_object {
   max-width: 800px;
   min-height: 100px;
+}
+
+.item_lista {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 1.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  width: 70vw;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #087bff;
+  background-color: #bcdcff;
+}
+
+.item_lista:hover,
+.item_lista:focus,
+.item_lista:active {
+  background-color: #3493ff;
+  color: #fff;
 }

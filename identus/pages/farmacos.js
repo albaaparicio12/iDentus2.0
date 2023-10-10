@@ -15,13 +15,22 @@ export default function Home() {
             <main>
                 <a className={styles.button_back} href='/menu'>&#65124; Menu</a>
                 <div className={styles.farmacosButton}>
-                    <Link href="/farmaco_lista"><button>Analgésicos </button></Link>
+                    <Link href={{
+                        pathname: '/lista',
+                        query: { list_name: "ANALGESICOS", back: '/farmacos', back_name: 'Fármacos' }
+                    }}><button>Analgésicos </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
-                    <Link href="/farmaco_lista"><button>Antibióticos </button></Link>
+                    <Link href={{
+                        pathname: '/lista',
+                        query: { list_name: "ANTIBIOTICOS", back: '/farmacos', back_name: 'Fármacos' }
+                    }}><button>Antibióticos </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
-                    <Link href="/farmaco_lista"><button>Corticoides </button></Link>
+                    <Link href={{
+                        pathname: '/lista',
+                        query: { list_name: "CORTICOIDES", back: '/farmacos', back_name: 'Fármacos' }
+                    }}><button>Corticoides </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{
