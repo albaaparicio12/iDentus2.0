@@ -19,7 +19,10 @@ export default function Home() {
                     <Link href="/farmacos"><button> <Icon.CapsulePill name='icon' />Fármacos </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
-                    <Link href="/menu"><button> <Icon.Virus name='icon' />Urgencias </button></Link>
+                    <Link href={{
+                        pathname: '/lista',
+                        query: { list_name: "URGENCIAS", back: '/menu', back_name: 'Menu' }
+                    }}><button> <Icon.Virus name='icon' />Urgencias </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
                     <Link href="/menu"><button> <Icon.JournalMedical name='icon' />Protocolos </button></Link>
