@@ -28,7 +28,7 @@ export default function Home() {
                     <Link href="/menu"><button> <Icon.JournalMedical name='icon' />Protocolos </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
-                    <Link href="/menu"><button> <Icon.Hospital name='icon' />Receta médica </button></Link>
+                    <Link href="/receta"><button> <Icon.Hospital name='icon' />Receta médica </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
                     <Link href="/menu"><button> <Icon.Cart2 name='icon' />Casas comerciales </button></Link>
