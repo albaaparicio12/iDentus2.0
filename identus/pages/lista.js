@@ -40,13 +40,17 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <a className={styles.button_back} href={back}>&#65124; {back_name}</a>
-                <input type="text" value={search} onChange={handleChange} />
-                {search_names.map((name, index) => (
-                    <div key={index}>
-                        <button className={styles.item_lista}>{name}</button>
-                    </div>
-                ))}
+                <div className={styles.top_bar}>
+                    <a className={styles.button_back} href={back}>&#65124; {back_name}</a>
+                    <div className={styles.search_bar}><input id="search_bar" type="text" value={search} placeholder='Escribe aquí...' onChange={handleChange} /></div>
+                </div>
+                <div className={styles.lista_items}>
+                    {search_names.map((name, index) => (
+                        <div key={index}>
+                            <button className={styles.item_lista}>{name}</button>
+                        </div>
+                    ))}
+                </div>
             </main>
         </div >
     )
