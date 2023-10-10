@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import styles from '../styles/Menu.module.css';
+import styles from '../styles/Home.module.css';
 import * as Icon from 'react-bootstrap-icons';
 import Link from 'next/link'
 
-export default function Menu() {
+export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
