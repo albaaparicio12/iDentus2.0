@@ -25,7 +25,7 @@ export default function Home() {
                     }}><button> <Icon.Virus name='icon' />Urgencias </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
-                    <Link href="/menu"><button> <Icon.JournalMedical name='icon' />Protocolos </button></Link>
+                    <Link href="/protocolos"><button> <Icon.JournalMedical name='icon' />Protocolos </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
                     <Link href="/menu"><button> <Icon.Hospital name='icon' />Receta médica </button></Link>
