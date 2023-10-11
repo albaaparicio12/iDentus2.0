@@ -34,7 +34,7 @@ export default function Home() {
                     <Link href="/comerciales"><button> <Icon.Cart2 name='icon' />Casas comerciales </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
-                    <Link href="/menu"><button> <Icon.Files name='icon' />Formación de postgrado </button></Link>
+                    <Link href="https://docdro.id/w7BAd3o"><button> <Icon.Files name='icon' />Formación de postgrado </button></Link>
                 </div>
             </main>
 
