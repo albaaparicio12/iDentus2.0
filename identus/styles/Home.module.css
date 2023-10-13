@@ -282,13 +282,15 @@
 }
 
 .receta_medica {
-  margin-top: 50px;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  right: 0;
+  display: grid;
+  margin: 1.3rem;
   margin: auto;
-  content: " ";
+}
+
+.receta_medica img {
+  object-fit: fill;
+  position: absolute;
+  left: 50px;
 }
 
 .comercialButton {
