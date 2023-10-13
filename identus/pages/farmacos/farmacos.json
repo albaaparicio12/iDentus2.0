@@ -1,0 +1,641 @@
+{
+	"objetos": [
+		{
+			"titulo": "PARACETAMOL",
+			"posologia": {
+				"adultos": [
+					"500mg/6-8h/hasta 7 días",
+					"650mg/6-8h/hasta 7 días",
+					"1g/6-8h/hasta 7 días"
+				],
+				"ninos": [
+					"10-15mg/kg/día (repartidos en 3 tomas)"
+				]
+			},
+			"efectossecundarios": [
+				"Hepatotoxicidad (dosis dependiente)"
+			],
+			"embarazo": "Compatible (FDA: B)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Paracetamol “genérico” (500,650,1000g) (distintos laboratorios Sandoz, Stada…)",
+						"Termalgin (500,650,1000mg) ",
+						"Gelocatil (500,650,1000mg",
+						"Efferalgan (500,1000mg)",
+						"Dolocatil (650,1000mg)"
+					]
+				},
+				{
+					"titulo": "Pediátricos",
+					"pres": [
+						"Gelocatil Pediátrico (325mg)",
+						"Efferalgan (30mg/ml)",
+						"Dolostop Pediátrico (100mg/ml)",
+						"Apiretal niños (250mg)",
+						"Apiretal (100mg/ml)"
+					]
+				}
+			],
+			"nota": "El paracetamol puede asociarse a un opioide (tramadol) en dolor moderado a severo indicado para adultos y niños mayores de 12 años. (ver tramadol/paracetamol)",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=23203",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=23203",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=60748",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=66012",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=72343",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=58157",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=78837",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=56301",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=49302"
+			]
+		},
+		{
+			"titulo": "IBUPROFENO",
+			"posologia": {
+				"adultos": [
+					"400mg/6-8h/hasta 7 días",
+					"600mg/6-8h/hasta 7 días"
+				],
+				"ninos": [
+					"20-30mg/kg/día (repartidos en 3-4 tomas)"
+				]
+			},
+			"efectossecundarios": [
+				"Reacciones de hipersensibilidad",
+				"Diarrea",
+				"Dispepsia",
+				"Gastritis erosiva y úlcera gastro-duodenal",
+				"Hepatotoxicidad",
+				"Disminución de la eficacia de los antihipertensivos",
+				"Insuficiencia renal"
+			],
+			"embarazo": "Se recomienda evitar utilizarlo durante el primer y segundo trimestre del embarazo y contraindicado en el tercer trimestre del mismo (FDA: D)*. Compatible con la lactancia (FDA: B)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Ibuprofeno “genérico” (400, 600mg)",
+						"Espidifen 600mg)",
+						"Neobrugen (600mg)",
+						"Efferalgan (500,1000mg)",
+						"Algidrin (600mg)"
+					]
+				},
+				{
+					"titulo": "Pediátricos",
+					"pres": [
+						"Ibuprofeno “genérico” (suspensión) (20 ó 40mg/ml)",
+						"Dalsy (suspensión) (20 ó 40mg/ml)",
+						"Dalsy (200, 400mg)",
+						"Algidrin pediátrico (suspensión) (20 ó 40mg/ml)",
+						"Algidrin infantil (200mg)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=80719",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=60748",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=63196",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=59166",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=78859",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=66868"
+			]
+		},
+		{
+			"titulo": "NAPROXENO",
+			"posologia": {
+				"adultos": [
+					"500mg/12h/ hasta 7 días"
+				],
+				"ninos": []
+			},
+			"efectossecundarios": [
+				"Reacciones de hipersensibilidad",
+				"Diarrea",
+				"Dispepsia",
+				"Gastritis erosiva y úlcera gastro-duodenal",
+				"Hepatotoxicidad",
+				"Disminución de la eficacia de los antihipertensivos",
+				"Insuficiencia renal"
+			],
+			"embarazo": "Contraindicado en el tercer trimestre del embarazo (FDA: C)* Según la Academia Americana de Pediatría (https://www.aap.org/), es compatible con la lactancia pero los  fabricantes no recomiendan su administración durante la lactancia",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Naproxeno “genérico” (500mg)",
+						"Antalgin (550mg)",
+						"Momen (200mg)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=68435",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=57152"
+			]
+		},
+		{
+			"titulo": "DEKETOPROXENO",
+			"posologia": {
+				"adultos": [
+					"12,5mg/6h/hasta 7 días",
+					"25mg/8h/ hasta 7 días"
+				],
+				"ninos": []
+			},
+			"efectossecundarios": [
+				"Reacciones de hipersensibilidad",
+				"Diarrea",
+				"Dispepsia",
+				"Gastritis erosiva y úlcera gastro-duodenal",
+				"Hepatotoxicidad",
+				"Disminución de la eficacia de los antihipertensivos",
+				"Insuficiencia renal"
+			],
+			"embarazo": "Contraindicado en el tercer trimestre del embarazo (FDA: C)* Según la Academia Americana de Pediatría (https://www.aap.org/), es compatible con la lactancia pero los  fabricantes no recomiendan su administración durante la lactancia",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Dexketoprofeno “genérico” (12,5 , 25mg)",
+						"Enantyum (12,5 , 25mg)",
+						"Endolex  (25mg)",
+						"Ketesse (25mg)",
+						"Quiralam (25mg)",
+						"Adolquir (25mg)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=77395",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=60927",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=86182",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=60930",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=77395"
+			]
+		},
+		{
+			"titulo": "DICLOFENACO",
+			"posologia": {
+				"adultos": [
+					"50mg/8h/hasta 7 días"
+				],
+				"ninos": [
+					"No recomendado en niños"
+				]
+			},
+			"efectossecundarios": [
+				"Reacciones de hipersensibilidad",
+				"Diarrea",
+				"Dispepsia",
+				"Gastritis erosiva y úlcera gastro-duodenal",
+				"Hepatotoxicidad",
+				"Disminución de la eficacia de los antihipertensivos",
+				"Insuficiencia renal"
+			],
+			"embarazo": "Contraindicado durante el tercer trimestre de embarazo FDA:C*). No se recomienda durante la lactancia",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Diclofenaco “genérico” (50mg)",
+						"Voltaren (50mg)",
+						"Dolotren (50mg)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=62161",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=55005",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=57202"
+			]
+		},
+		{
+			"titulo": "METAMIZOL",
+			"posologia": {
+				"adultos": [
+					"575mg/6-8h/hasta 7 días"
+				],
+				"ninos": []
+			},
+			"efectossecundarios": [
+				"Agranulocitosis",
+				"Hipotensión",
+				"Reacciones de hipersesibilidad"
+			],
+			"embarazo": "Evitar su uso en el primero y segundo trimestre de embarazo. Está contraindicado en el tercer trimestre. Evitar lactancia durante el tratamiento (FDA:sin clasificar)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "",
+					"pres": [
+						"Metamizol “genérico” (575mg)",
+						"Nolotil (575mg)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=68116",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=47633"
+			]
+		},
+		{
+			"titulo": "TRAMADOL/PARACETAMOL",
+			"posologia": {
+				"adultos": [
+					"1 comprimido(75/650mg) cada 6-8 h (max. 4 comprimidos al día) ",
+					"2 comprimidos (37,5/325mg) cada 6-8 h (max. 8 comprimidos al día)"
+				],
+				"ninos": [
+					"No recomendado en menores de 12 años"
+				]
+			},
+			"efectossecundarios": [
+				"Hepatotoxicidad (dosis dependiente)",
+				"depresión de SNC",
+				"vómitos",
+				"estreñimiento",
+				"retención de orina",
+				"sequedad de boca"
+			],
+			"embarazo": "Evitar o sopesar riesgo-beneficio (FDA: C)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Tramadol/paracetamol “genérico” (37,5/325 ó 75/650mg)",
+						"Zaldiar (37,5/325mg)",
+						"Capdol (37,5/325mg)",
+						"Captor (75/650mg)",
+						"Diliban (75/650mg)",
+						"Pazital(37,5/325mg)",
+						"Pontalsic (37,5/325mg)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=75633",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=70584",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=75629",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=75630",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=75633",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=66853",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=65158"
+			]
+		},
+		{
+			"titulo": "AMOXICILINA",
+			"posologia": {
+				"adultos": [
+					"500mg/8h/7dias",
+					"750mg/8h/7días ",
+					"1g/8h/7días"
+				],
+				"ninos": [
+					"40mg/kg/día (repartidos en 3 tomas)"
+				]
+			},
+			"efectossecundarios": [
+				"Reacciones de hipersensibilidad",
+				"diarrea",
+				"nauseas",
+				"candidiasis"
+			],
+			"embarazo": "Compatible (FDA: B)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Amoxicilina “genérico” (500,750,1000mg)",
+						"Clamoxyl (500,750,1000mg)"
+					]
+				},
+				{
+					"titulo": "Pediátricos",
+					"pres": [
+						"Amoxicilina “genérico” (suspensión) (125mg/5ml ó 250mg/5ml)"
+					]
+				}
+			],
+			"nota": "*Profilaxis endocarditis bacteriana: En adultos 2000mg 1 hora antes del procedimiento odontológico",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=66252",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=50239",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=62786"
+			]
+		},
+		{
+			"titulo": "AMOXICILINA/ÁCIDO CLAVULÁNICO",
+			"posologia": {
+				"adultos": [
+					"500/125mg/8h/7dias",
+					"875/125mg/8h/7días",
+					"1000/62,5mg/12h/7días"
+				],
+				"ninos": [
+					"40mg/kg/día “formulación 100/12,5mg” (repartidos en 3 tomas)"
+				]
+			},
+			"efectossecundarios": [
+				"Reacciones de hipersensibilidad",
+				"hepatotoxicidad",
+				"diarrea",
+				"náuseas",
+				"candidiasis"
+			],
+			"embarazo": "Compatible (FDA: B)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Amoxicilina/clavulánico “genérico” (500/125mg ó 875/125mg)",
+						"Augmentine (500/125mg, 875/125mg)",
+						"Medoclav EFG (875/125mg)"
+					]
+				},
+				{
+					"titulo": "Pediátricos",
+					"pres": [
+						"Amoxicilina/clavulánico “genérico” (suspensión) (100/12,5mg/ml)",
+						"Amoxicilina/clavulánico “genérico” (250/62,5mg)",
+						"Augmentine (suspensión)(100/12,5mg/ml)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=66252",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=81482",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=83544",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=62800",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=59051"
+			]
+		},
+		{
+			"titulo": "CLINDAMICINA",
+			"posologia": {
+				"adultos": [
+					"300mg/6h/7-10dias "
+				],
+				"ninos": [
+					"3,5-7,5mg/kg/día (repartidos en 4 tomas)"
+				]
+			},
+			"efectossecundarios": [
+				"Colitis pseudomembranosa",
+				"hepatotoxicidad"
+			],
+			"embarazo": "Compatible (FDA: B)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Clindamicina “genérico” (150, 300mg)",
+						"Dalacin (150, 300mg)"
+					]
+				},
+				{
+					"titulo": "Pediátricos",
+					"pres": [
+						"Clindamicina “genérico” (150mg)",
+						"Dalacin 150mg"
+					]
+				}
+			],
+			"nota": "*Profilaxis endocarditis bacteriana: 600mg 1 hora antes del procedimiento odontológico",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=49152",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=49152"
+			]
+		},
+		{
+			"titulo": "ESPIRAMICINA/METRONIDAZOL",
+			"posologia": {
+				"adultos": [
+					"Formulación: 750.000UI/125mg (2 comprimidos/8h/6-10días)"
+				],
+				"ninos": [
+					"- De 10 a 15 años: 3 comprimidos al día (corresponden a una dosis de 2,25 Millones de UI de espiramicina y 375 mg de metronidazol).",
+					"- De 5-10 años: La forma farmacéutica de este medicamento no es apropiada para su administración a niños de esta franja de edad. Su uso queda a criterio del médico. La dosis habitual recomendada para este grupo de edad es de 2 comprimidos al día (corresponden a una dosis de 1,5 millones de UI de espiramicina y 250 mg de metronidazol)"
+				]
+			},
+			"efectossecundarios": [
+				"Reacciones de hipersensibilidad",
+				"vómitos",
+				"nauseas",
+				"cefaleas",
+				"disgeusia"
+			],
+			"embarazo": "Compatible (FDA: B)* (evitar en el primer trimestre del embarazo)",
+			"presentacionescomerciales": [
+				{
+					"titulo": "",
+					"pres": [
+						"Rhodogil (Rovifarma) "
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=50057"
+			]
+		},
+		{
+			"titulo": "AZITROMICINA",
+			"posologia": {
+				"adultos": [
+					"500mg/24h/3días"
+				],
+				"ninos": [
+					"10mg/kg/dosis única diaria/3 días"
+				]
+			},
+			"efectossecundarios": [
+				"Diarrea",
+				"cefalea",
+				"vómitos",
+				"dolor abdominal",
+				"náuseas",
+				"taquicardia ventricular",
+				"ictericia"
+			],
+			"embarazo": "No hay datos suficientes (evitar o sopesar indicación durante el embarazo FDA: B*). Evitar durante la lactancia",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Azitromicina “genérico” (500mg)",
+						"Arato EFG (500mg)",
+						"Zitromax (500mg)"
+					]
+				},
+				{
+					"titulo": "Pediátricos",
+					"pres": [
+						"Azitromicina “genérico” (suspensión) (200mg/5ml)",
+						"Zitromax (suspensión) (200mg/5ml)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=65600",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=61272",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=59615"
+			]
+		},
+		{
+			"titulo": "CIPROFLOXACINO",
+			"posologia": {
+				"adultos": [
+					"250-750mg/12h/5-10días"
+				],
+				"ninos": []
+			},
+			"efectossecundarios": [
+				"Diarrea",
+				"cefalea",
+				"vómitos",
+				"dolor abdominal",
+				"náuseas",
+				"colitis pseudomembranosa",
+				"hepatopatías",
+				"mareo",
+				"arritmias"
+			],
+			"embarazo": "No hay datos suficientes (evitar o sopesar indicación durante el embarazo FDA: C*). Evitar durante la lactancia",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Ciprofloxacino “genérico” (250, 500, 750mg)",
+						"Baycip (500mg)",
+						"Araxacima (500mg)",
+						"Doriman (250, 500mg)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=62768",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=64027"
+			]
+		},
+		{
+			"titulo": "PREDNISONA",
+			"posologia": {
+				"adultos": [
+					"0,2-1mg/kg/día"
+				],
+				"ninos": []
+			},
+			"efectossecundarios": [
+				"Sd. De Cushing",
+				"Hipertensión",
+				"Diabetes",
+				"Trastornos psíquicos",
+				"Insomnio",
+				"Pancreatitis",
+				"Osteopenia",
+				"osteonecrosis",
+				"Linfopenia e imunosupresión",
+				"Retrasos en la cicatrización",
+				"Alteraciones hidroelectrolíticas"
+			],
+			"embarazo": "No se recomienda durante el embarazo (FDA: C)*. Compatible con la lactancia",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Prednisona “genérico” (2.5, 5, 10, 30mg) ",
+						"Dacortin (2.5, 5, 30mg) "
+					]
+				}
+			],
+			"nota": "Este medicamento requiere disminución progresiva de la dosis para evitar la insuficiencia suprarrenal",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=75649",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=47863"
+			]
+		},
+		{
+			"titulo": "METILPREDNISOLONA",
+			"posologia": {
+				"adultos": [
+					"2-60mg/día"
+				],
+				"ninos": []
+			},
+			"efectossecundarios": [
+				"Sd. De Cushing",
+				"Hipertensión",
+				"Diabetes",
+				"Trastornos psíquicos",
+				"Insomnio",
+				"Pancreatitis",
+				"Osteopenia",
+				"osteonecrosis",
+				"Linfopenia e imunosupresión",
+				"Retrasos en la cicatrización",
+				"Alteraciones hidroelectrolíticas"
+			],
+			"embarazo": "No recomienda utilizarlo durante el embarazo y la lactancia (FDA: D)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Urbason (4, 16, 40mg)"
+					]
+				}
+			],
+			"nota": "Este medicamento requiere disminución progresiva de la dosis para evitar la insuficiencia suprarrenal",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=59123"
+			]
+		},
+		{
+			"titulo": "DEXAMETASONA",
+			"posologia": {
+				"adultos": [
+					"4-8mg/día"
+				],
+				"ninos": []
+			},
+			"efectossecundarios": [
+				"Sd. De Cushing",
+				"Hipertensión",
+				"Diabetes",
+				"Trastornos psíquicos",
+				"Insomnio",
+				"Pancreatitis",
+				"Osteopenia",
+				"osteonecrosis",
+				"Linfopenia e imunosupresión",
+				"Retrasos en la cicatrización",
+				"Alteraciones hidroelectrolíticas"
+			],
+			"embarazo": "No recomienda utilizarlo durante el embarazo y la lactancia (FDA: D)*",
+			"presentacionescomerciales": [
+				{
+					"titulo": "Adultos",
+					"pres": [
+						"Dexametasona “genérico” (4, 8 mg)",
+						"Fortecortin (4, 8 mg)"
+					]
+				}
+			],
+			"nota": "",
+			"source": [
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=81414",
+				"https://cima.aemps.es/cima/publico/detalle.html?nregistro=70032"
+			]
+		}
+	]
+}
