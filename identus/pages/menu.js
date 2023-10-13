@@ -28,13 +28,16 @@ export default function Home() {
                     <Link href="/protocolos"><button> <Icon.JournalMedical name='icon' />Protocolos </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
-                    <Link href="/receta"><button> <Icon.Hospital name='icon' />Receta médica </button></Link>
+                    <Link href={{
+                        pathname: "/imagen",
+                        query: { back: "/menu", back_name: "Menu", n_images: 2, list_name: "receta", stylePics: "receta_medica" },
+                    }}><button> <Icon.Hospital name='icon' />Receta médica</button></Link>
                 </div>
                 <div className={styles.menuButtons}>
                     <Link href="/comerciales"><button> <Icon.Cart2 name='icon' />Casas comerciales </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
-                    <Link href="/menu"><button> <Icon.Files name='icon' />Formación de postgrado </button></Link>
+                    <Link href="https://docdro.id/w7BAd3o"><button> <Icon.Files name='icon' />Formación de postgrado </button></Link>
                 </div>
             </main>
 

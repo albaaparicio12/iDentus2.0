@@ -31,7 +31,21 @@ export default function Home() {
         return (name.toUpperCase().includes(search.toUpperCase())) || (search == "")
     });
 
-
+    const page_names = []
+    for (var i = 0; i < search_names.length; i++) {
+        page_names.push(
+            <div key={i}>
+                <Link href={{
+                    pathname: "/item",
+                    query: {
+                        page_name: search_names[i],
+                        back: back,
+                        back_name: back_name,
+                    }
+                }}><button className={styles.item_lista}>{search_names[i]}</button></Link>
+            </div>
+        )
+    }
     return (
         <div className={styles.container}>
             <Head>
@@ -46,11 +60,7 @@ export default function Home() {
                     <div className={styles.search_bar}><input id="search_bar" type="text" value={search} placeholder='Escribe aquí...' onChange={handleChange} /></div>
                 </div>
                 <div className={styles.lista_items}>
-                    {search_names.map((name, index) => (
-                        <div key={index}>
-                            <button className={styles.item_lista}>{name}</button>
-                        </div>
-                    ))}
+                    {page_names}
                 </div>
             </main>
         </div >
