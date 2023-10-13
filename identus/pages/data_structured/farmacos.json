@@ -258,11 +258,11 @@
 			},
 			"efectossecundarios": [
 				"Hepatotoxicidad (dosis dependiente)",
-				"depresión de SNC",
-				"vómitos",
-				"estreñimiento",
-				"retención de orina",
-				"sequedad de boca"
+				"Depresión de SNC",
+				"Vómitos",
+				"Estreñimiento",
+				"Retención de orina",
+				"Sequedad de boca"
 			],
 			"embarazo": "Evitar o sopesar riesgo-beneficio (FDA: C)*",
 			"presentacionescomerciales": [
@@ -304,9 +304,9 @@
 			},
 			"efectossecundarios": [
 				"Reacciones de hipersensibilidad",
-				"diarrea",
-				"nauseas",
-				"candidiasis"
+				"Diarrea",
+				"Nauseas",
+				"Candidiasis"
 			],
 			"embarazo": "Compatible (FDA: B)*",
 			"presentacionescomerciales": [
@@ -345,10 +345,10 @@
 			},
 			"efectossecundarios": [
 				"Reacciones de hipersensibilidad",
-				"hepatotoxicidad",
-				"diarrea",
-				"náuseas",
-				"candidiasis"
+				"Hepatotoxicidad",
+				"Diarrea",
+				"Náuseas",
+				"Candidiasis"
 			],
 			"embarazo": "Compatible (FDA: B)*",
 			"presentacionescomerciales": [
@@ -390,7 +390,7 @@
 			},
 			"efectossecundarios": [
 				"Colitis pseudomembranosa",
-				"hepatotoxicidad"
+				"Hepatotoxicidad"
 			],
 			"embarazo": "Compatible (FDA: B)*",
 			"presentacionescomerciales": [
@@ -428,10 +428,10 @@
 			},
 			"efectossecundarios": [
 				"Reacciones de hipersensibilidad",
-				"vómitos",
-				"nauseas",
-				"cefaleas",
-				"disgeusia"
+				"Vómitos",
+				"Nauseas",
+				"Cefaleas",
+				"Disgeusia"
 			],
 			"embarazo": "Compatible (FDA: B)* (evitar en el primer trimestre del embarazo)",
 			"presentacionescomerciales": [
@@ -459,12 +459,12 @@
 			},
 			"efectossecundarios": [
 				"Diarrea",
-				"cefalea",
-				"vómitos",
-				"dolor abdominal",
-				"náuseas",
-				"taquicardia ventricular",
-				"ictericia"
+				"Cefalea",
+				"Vómitos",
+				"Dolor abdominal",
+				"Náuseas",
+				"Taquicardia ventricular",
+				"Ictericia"
 			],
 			"embarazo": "No hay datos suficientes (evitar o sopesar indicación durante el embarazo FDA: B*). Evitar durante la lactancia",
 			"presentacionescomerciales": [
@@ -501,14 +501,14 @@
 			},
 			"efectossecundarios": [
 				"Diarrea",
-				"cefalea",
-				"vómitos",
-				"dolor abdominal",
-				"náuseas",
-				"colitis pseudomembranosa",
-				"hepatopatías",
-				"mareo",
-				"arritmias"
+				"Cefalea",
+				"Vómitos",
+				"Dolor abdominal",
+				"Náuseas",
+				"Colitis pseudomembranosa",
+				"Hepatopatías",
+				"Mareo",
+				"Arritmias"
 			],
 			"embarazo": "No hay datos suficientes (evitar o sopesar indicación durante el embarazo FDA: C*). Evitar durante la lactancia",
 			"presentacionescomerciales": [
@@ -544,7 +544,7 @@
 				"Insomnio",
 				"Pancreatitis",
 				"Osteopenia",
-				"osteonecrosis",
+				"Osteonecrosis",
 				"Linfopenia e imunosupresión",
 				"Retrasos en la cicatrización",
 				"Alteraciones hidroelectrolíticas"
@@ -581,7 +581,7 @@
 				"Insomnio",
 				"Pancreatitis",
 				"Osteopenia",
-				"osteonecrosis",
+				"Osteonecrosis",
 				"Linfopenia e imunosupresión",
 				"Retrasos en la cicatrización",
 				"Alteraciones hidroelectrolíticas"
@@ -616,7 +616,7 @@
 				"Insomnio",
 				"Pancreatitis",
 				"Osteopenia",
-				"osteonecrosis",
+				"Osteonecrosis",
 				"Linfopenia e imunosupresión",
 				"Retrasos en la cicatrización",
 				"Alteraciones hidroelectrolíticas"

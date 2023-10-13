@@ -23,17 +23,27 @@ export default function Home() {
             </Head>
             <main>
                 <a className={styles.button_back} href={back}>&#65124; {back_name}</a>
-                <div>
+                <div className={styles.item}>
                     <h1>{item.titulo}</h1>
-                    <h2>Posología:</h2>
-                    <p>{writePosologia(item.posologia)}</p>
-                    <h2>Efectos secundarios:</h2>
-                    <p>{writeList(item.efectossecundarios)}</p>
-                    <h2>Embarazo y lactancia:</h2>
-                    <p>{item.embarazo}</p>
-                    <h2>Presentaciones comerciales:</h2>
-                    <p>{writePresentacionesComerciales(item.presentacionescomerciales)}</p>
-                    <p>{writeNotas(item.nota)}</p>
+                    <div className={styles.item_info}>
+                        <h2>Posología:</h2>
+                        <p>{writePosologia(item.posologia)}</p>
+                    </div>
+                    <div className={styles.item_info}>
+                        <h2>Efectos secundarios:</h2>
+                        <p>{writeList(item.efectossecundarios)}</p>
+                    </div>
+                    <div className={styles.item_info}>
+                        <h2>Embarazo y lactancia:</h2>
+                        <p>{item.embarazo}</p>
+                    </div>
+                    <div className={styles.item_info}>
+                        <h2>Presentaciones comerciales:</h2>
+                        <p>{writePresentacionesComerciales(item.presentacionescomerciales)}</p>
+                    </div>
+                    <div className={styles.item_info}>
+                        <p>{writeNotas(item.nota)}</p>
+                    </div>
                 </div>
             </main>
         </div >
@@ -72,7 +82,10 @@ function writePresentacionesComerciales(presentacionescomerciales) {
 function writeNotas(notas) {
     if (notas != null && notas.length > 0) {
         return (
-            <p>{notas}</p>
+            <div>
+                <h2>Notas: </h2>
+                <p>{notas}</p>
+            </div>
         );
     }
 }
@@ -81,7 +94,7 @@ function writeList(list) {
     if (list != null) {
         return (
             list.map((item) => (
-                <p>{item}</p>
+                <p>· {item}</p>
             )))
     }
 }

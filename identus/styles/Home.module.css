@@ -315,3 +315,22 @@
   height: -webkit-fill-available;
   padding: 5px;
 }
+
+.item {
+  margin: 70px;
+  margin-top: 90px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  max-width: 600px;
+}
+
+.item h1 {
+  font-size: 50px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.item_info {
+  padding-bottom: 20px;
+}
