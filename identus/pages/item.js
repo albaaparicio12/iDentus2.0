@@ -72,9 +72,7 @@ function writePresentacionesComerciales(presentacionescomerciales) {
 function writeNotas(notas) {
     if (notas != null && notas.length > 0) {
         return (
-            notas.map((nota) => (
-                <p>{nota}</p>
-            ))
+            <p>{notas}</p>
         );
     }
 }
