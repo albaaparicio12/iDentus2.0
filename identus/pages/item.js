@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import { useSearchParams } from 'next/navigation';
-import jsonData from './farmacos/farmacos.json';
+import jsonData from './data_structured/farmacos.json';
 
 
 export default function Home() {
