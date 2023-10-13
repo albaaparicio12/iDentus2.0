@@ -41,6 +41,7 @@ export default function Home() {
                         page_name: search_names[i],
                         back: back,
                         back_name: back_name,
+                        type_page: list
                     }
                 }}><button className={styles.item_lista}>{search_names[i]}</button></Link>
             </div>
