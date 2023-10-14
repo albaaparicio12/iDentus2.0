@@ -35,13 +35,13 @@ export default function Home() {
                 <div className={styles.farmacosButton}>
                     <Link href={{
                         pathname: "/imagen",
-                        query: { back: "/farmacos", back_name: "Fármacos", n_images: 1, list_name: "fda", stylePics: "narrow_pic_object" },
+                        query: { back: "/farmacos", back_name: "Fármacos", n_images: 1, list_name: "fda" },
                     }}><button>Categorías farmacológicas &#40;FDA&#41; </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{
                         pathname: "/imagen",
-                        query: { back: "/farmacos", back_name: "Fármacos", n_images: 1, list_name: "espectro", stylePics: "large_pic_object" },
+                        query: { back: "/farmacos", back_name: "Fármacos", n_images: 1, list_name: "espectro" },
                     }}><button>Espectro antibióticos </button></Link>
                 </div>
             </main>

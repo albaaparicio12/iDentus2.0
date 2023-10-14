@@ -15,6 +15,7 @@ export default function Home() {
     const data = type_page == "URGENCIAS" ? urgenciasData.objetos : farmacosData.objetos;
     var item = []
     if (data != null) {
+        {/* comprobación si es null debido pare evitar errores en el build */ }
         item = data.find(item => item.titulo === page_name);
     }
 
@@ -27,7 +28,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <Link className={styles.button_back} href={back}>&#65124; {capitalize(type_page)}</Link>
+                <Link className={styles.button_back} href={back ?? '/'}>&#65124; {capitalize(type_page)}</Link> {/* ?? es por si falla la url que te lleva al main */}
                 {writePage(type_page, item)}
             </main>
         </div >
@@ -92,30 +93,32 @@ function writePage(type_page, item) {
 }
 
 function writeFarmacos(item) {
-    return (
-        <div className={styles.item}>
-            <h1>{item.titulo}</h1>
-            <div className={styles.item_info}>
-                <h2>Posología:</h2>
-                {writePosologia(item.posologia)}
+    if (item != null) {
+        return (
+            <div className={styles.item}>
+                <h1>{item.titulo}</h1>
+                <div className={styles.item_info}>
+                    <h2>Posología:</h2>
+                    {writePosologia(item.posologia)}
+                </div>
+                <div className={styles.item_info}>
+                    <h2>Efectos secundarios:</h2>
+                    {writeList(item.efectossecundarios)}
+                </div>
+                <div className={styles.item_info}>
+                    <h2>Embarazo y lactancia:</h2>
+                    <p>{item.embarazo}</p>
+                </div>
+                <div className={styles.item_info}>
+                    <h2>Presentaciones comerciales:</h2>
+                    {writePresentacionesComerciales(item.presentacionescomerciales)}
+                </div>
+                <div className={styles.item_info}>
+                    {writeNotas(item.nota)}
+                </div>
             </div>
-            <div className={styles.item_info}>
-                <h2>Efectos secundarios:</h2>
-                {writeList(item.efectossecundarios)}
-            </div>
-            <div className={styles.item_info}>
-                <h2>Embarazo y lactancia:</h2>
-                <p>{item.embarazo}</p>
-            </div>
-            <div className={styles.item_info}>
-                <h2>Presentaciones comerciales:</h2>
-                {writePresentacionesComerciales(item.presentacionescomerciales)}
-            </div>
-            <div className={styles.item_info}>
-                {writeNotas(item.nota)}
-            </div>
-        </div>
-    )
+        )
+    }
 }
 
 function writeUrgencias(item) {
@@ -140,7 +143,7 @@ function writeUrgenciasContent(content) {
         return (
             content.map((item, index) => (
                 <div>
-                    <ul name="urgencias">
+                    <ul name="urgencias"> {/* Si es un array o un dict es que es una lista de varios niveles */}
                         {typeof item === 'object' && !Array.isArray(item) ? (
                             <li key={"content" + { index }}>
                                 {item.nivel1}
@@ -187,7 +190,7 @@ function writePostContent(content) {
 
 function capitalize(str) {
     if (str != null) {
-        str = str.toLowerCase();
+        str = str.toLowerCase(); {/* Nombre del botón atras, se saca del mismo nombre del array de item y por eso se tiene que capitalizar */ }
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
 }

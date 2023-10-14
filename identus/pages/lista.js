@@ -46,7 +46,7 @@ export default function Home() {
                         back: window.location.href,
                         type_page: list
                     }
-                }}><button className={styles.item_button}>{search_names[i]}</button></Link>
+                }}><button className={styles.item_button}>{search_names[i]}</button></Link> {/* window.location.href para volver a la url con unos searchparams específicos. Sólo funciona con link, con <a> no. */}
             </div>
         )
     }

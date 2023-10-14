@@ -16,7 +16,7 @@ export default function Home() {
     for (var i = 1; i <= n_images; i++) {
         imageElements.push(
             <div className={styles.div_pic} key={i}>
-                <img src={`/${list_name}${i}.png`} alt={i} style={{ top: `${(i - 1) * 700 + 70}px` }} />
+                <img src={`/${list_name}${i}.png`} alt={i} />
             </div>
         )
     }
