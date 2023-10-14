@@ -16,8 +16,8 @@ export default function Home() {
     const searchParams = useSearchParams()
     const back = searchParams.get('back')
     const back_name = searchParams.get('back_name')
-    var list = searchParams.get('list_name')
-    var list_names = lists[list]
+    const list = searchParams.get('list_name')
+    const list_names = lists[list]
 
     /*
         Barra de búsqueda
