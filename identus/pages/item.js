@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
+import Link from 'next/link'
 import { useSearchParams } from 'next/navigation';
 import farmacosData from './data_structured/farmacos.json';
 import urgenciasData from './data_structured/urgencias.json';
@@ -18,13 +19,13 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>iDentus</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <a className={styles.button_back} href={back}>&#65124; {back_name}</a>
+                <Link className={styles.button_back} href={back}>&#65124; {capitalize(type_page.toLowerCase())}</Link>
                 {writePage(type_page, item)}
             </main>
         </div >
@@ -179,4 +180,9 @@ function writePostContent(content) {
             ))
         );
     }
+}
+
+
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }

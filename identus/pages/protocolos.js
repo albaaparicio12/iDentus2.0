@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>iDentus</title>
                 <link rel="icon" href="/favicon.ico" />
