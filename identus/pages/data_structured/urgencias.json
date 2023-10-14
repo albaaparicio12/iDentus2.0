@@ -1,0 +1,187 @@
+{
+    "objetos": [
+        {
+            "titulo": "RCP",
+            "precontent": [
+                "Ante persona inconsciente con respiración ausente o anormal:"
+            ],
+            "content": [
+                "Alertar a los Servicios de Emergencia (112). Si es posible, solicitar Desfibrilador Externo Automatizado (DEA).",
+                {
+                    "nivel1": "Comenzar RCP (Reanimación cardiopulmonar):",
+                    "nivel2": [
+                        "* 30 compresiones torácicas: ",
+                        [
+                            "- En el centro del pecho",
+                            "- 5-6 cm de profundidad",
+                            "- 100-120 por minuto"
+                        ],
+                        "* 2 ventilaciones de rescate con balón de resucitación y mascarilla. (Si no disponemos de él, seguir con compresiones).",
+                        "* Continuar 30:2",
+                        "* Encender el DEA en cuanto lo tengamos disponible y seguir sus indicaciones audiovisuales."
+                    ]
+                }
+            ],
+            "postcontent": [
+                "Algoritmos de RCP de la EUROPEAN RESEARCH COUNCIL 2021 https://www.urgenciasyemergen.com/wp-Content/uploads/2021/11/Algoritmos-ERC-2021-V2.pdf",
+                "RCP Adultos:",
+                "1",
+                "RCP Pediátrico:",
+                "2"
+            ]
+        },
+        {
+            "titulo": "ATRAGANTAMIENTO",
+            "precontent": [
+                "Ante persona con obstrucción de la vía aérea (atragantamiento) con tos efectiva:",
+                "Animar a seguir tosiendo",
+                "En cuanto la tos comience a ser inefectiva (no es capaz de toser):"
+            ],
+            "content": [
+                "Dar hasta 5 golpes interescapulares con el talón de nuestra mano, con la víctima inclinada hacia delante.",
+                "Si no son efectivos, dar hasta 5 compresiones abdominales con el puño de una mano agarrada por la otra, abrazando desde atrás al paciente, y aplicándolas entre el ombligo y la caja torácica, hacia atrás y hacia arriba (maniobra de Heimlich).",
+                "Continuar alternando 5 golpes interescapulares con 5 compresiones abdominales hasta la resolución de la obstrucción."
+            ],
+            "postcontent": [
+                "Si el paciente pierde la conciencia:",
+                "Avisar a los Servicios de Emergencia (112)",
+                "Iniciar reanimación cardiopulmonar (RCP)",
+                "Algoritmo consultado en : https://www.lasexta.com/constantes-vitales/campanas-prevencion/atragantamientos/como-realizar-maniobra-heimilch-adultos_201806275bf278100cf2c5d6155f9464.html",
+                "3"
+            ]
+        },
+        {
+            "titulo": "REACCIÓN ANAFILÁCTICA",
+            "precontent": "",
+            "content": [
+                {
+                    "nivel1": "Reconocer la situación, y el posible factor desencadenante:",
+                    "nivel2": [
+                        "* Alteraciones en la vía aérea (edema de glotis)",
+                        "* Problemas respiratorios (sibilancias o tos persistente)",
+                        "* Problemas hemodinámicos (tensión arterial baja)",
+                        "* Alteraciones en piel y mucosas (urticaria, picor, erupciones)"
+                    ]
+                },
+                "Alertar a los Servicios de Emergencia (112).",
+                "Retirar o suspender el agente desencadenante (si es posible).",
+                "Administrar 0,5 mg Adrenalina intramuscular en la zona anterolateral del muslo.",
+                "Repetir cada 5 minutos si no hay mejoría o reaparecen los síntomas.",
+                "Mantener al paciente tumbado, que no se siente o levante repentinamente.",
+                "Evaluar periódicamente",
+                "Ante parada cardiaca, iniciar reanimación cardiopulmonar (RCP)."
+            ],
+            "postcontent": ""
+        },
+        {
+            "titulo": "ASMA/EPOC. BRONCOESPASMO",
+            "precontent": "",
+            "content": [
+                "Reconocer la situación: ante paciente asmático/EPOC que comienza con dificultad respiratoria, presencia de sibilancias al respirar, opresión en el tórax, tos sin causa aparente.",
+                "Tranquilizar al paciente.",
+                "Ayudarle con la administración de su propio broncodilatador si lo lleva, si no aporta su broncodilatador o este no es efectivo administraremos salbutamol inhalado de 4 a 8 inhalaciones cada 20 min hasta 4 veces.",
+                "Si no presenta mejoría, alertar a los servicios de Emergencia (112).",
+                "Comenzar con oxigenoterapia.",
+                "Monitorización de la saturación de O2 con el pulsioxímetro si es posible."
+            ],
+            "postcontent": ""
+        },
+        {
+            "titulo": "ICTUS AGUDO",
+            "precontent": "",
+            "content": [
+                "Sospechar la presencia de Ictus ante paciente con alteración neurológica brusca.",
+                {
+                    "nivel1": "Confirmación de que el evento se trata de un ictus mediante una escala de evaluación. Por ej.: Escala de ictus prehospitalario de Cincinnati (CPSS):",
+                    "nivel2": [
+                        "Asimetría Facial: haga que el paciente sonría o muestre los dientes. ",
+                        "Fuerza en los brazos: haga que el paciente cierre los ojos y mantenga los brazos estirados durante 10 segundos. Un brazo no se mueve o cae respecto al otro.",
+                        "Lenguaje: arrastra las palabras, utiliza palabras incorrectas o no puede hablar."
+                    ]
+                },
+                "Si presenta uno de los tres parámetros hay una alta sospecha de ictus, Alertar a los Servicios de Emergencia (112)."
+            ],
+            "postcontent": [
+                "Algoritmo consultado en: https://www.tratamientoictus.com/escala-cincinnati-de-ictus/",
+                "4"
+            ]
+        },
+        {
+            "titulo": "IAM",
+            "precontent": "",
+            "content": [
+                "Tranquilizar a la víctima.",
+                "Mantenerla sentada o tumbada.",
+                "Alertar a los Servicios de Emergencia (112).",
+                "Administrar 150-300 mg de ácido acetilsalicílico (Aspirina®), vía oral (masticada), salvo dolor traumático, alergia, asma grave o hemorragia gastrointestinal conocida.",
+                "Evaluar periódicamente.",
+                "Localizar y preparar DEA si lo tenemos disponible hasta la llegada del 112.",
+                "Ante parada cardiaca, iniciar reanimación cardiopulmonar (RCP)."
+            ],
+            "postcontent": ""
+        },
+        {
+            "titulo": "HIPOGLUCEMIA",
+            "precontent": "",
+            "content": [
+                {
+                    "nivel1": "Sospechar ante:",
+                    "nivel2": [
+                        "* Irritabilidad y/o alteraciones de conducta",
+                        "* Temblores",
+                        "* Visión borrosa",
+                        "* Confusión",
+                        "* Sudor frio, palidez",
+                        "* Crisis convulsiva",
+                        "* Mareo, cefalea",
+                        "* Náuseas"
+                    ]
+                },
+                "Confirmar en la historia o con familiares si el paciente es Diabético conocido.",
+                "Realizar control de la glucemia si es posible para confirmar la hipoglucemia (< 70 mg/dL).",
+                {
+                    "nivel1": "Si está consciente y es capaz de tragar: administrar 15 gramos glucosa o de hidratos de carbono de rápida absorción vía oral. Por ejemplo:",
+                    "nivel2": [
+                        "* 1 vaso de agua con 2 sobres de azúcar",
+                        "* 1 vaso pequeño de bebida azucarada tipo cola, naranjada…",
+                        "* 1 vaso de zumo de frutas comercial"
+                    ]
+                },
+                "Si a los 15 minutos persiste la clínica o glucemia < 70 mg/dL, repetir dosis.",
+                "Si no mejora o pierde la conciencia, alertar a los Servicios de Emergencia (112).",
+                "Ante pérdida de conciencia, administrar glucagón im según instrucciones del kit, en brazo o muslo. Puede repetirse la dosis a los 10 minutos si sigue inconsciente.",
+                "Si recupera, ofrecer algo de comida (sándwich, galletas…).",
+                "9. Si es posible, mida y registre los niveles de azúcar antes y después del tratamiento."
+            ],
+            "postcontent": ""
+        },
+        {
+            "titulo": "PRESINCOPE/SINCOPE",
+            "precontent": "",
+            "content": [
+                "Sospechar ante: mareos, náuseas, sudoración, alteraciones en la visión (borrosa, moscas volantes) y sensación inminente de pérdida de conciencia.",
+                "Procurar que la víctima esté segura y que no se caiga o lesione si llegara a perder el conocimiento.",
+                "Colocar al paciente en decúbito supino con las piernas elevadas (Posición trendelenburg).",
+                "Si llegara a perder la conciencia (SINCOPE), mantener dicha posición y alertar a los Servicios de Emergencia (112)."
+            ],
+            "postcontent": ""
+        },
+        {
+            "titulo": "CRISIS CONVULSIVA",
+            "precontent": "",
+            "content": [
+                "Alertar a los Servicios de Emergencia (112)",
+                {
+                    "nivel1": "Tumbar al paciente si es posible",
+                    "nivel2": [
+                        "* Retirar objetos de alrededor con los que pueda golpearse",
+                        "* NO introducir nada en la boca (objetos, alimentos ni medicamentos)",
+                        "* NO sujetar con fuerza ni evitar los movimientos"
+                    ]
+                },
+                "Tras la crisis, colocar al paciente de lado (posición lateral de seguridad)."
+            ],
+            "postcontent": ""
+        }
+    ]
+}

@@ -329,10 +329,20 @@
 .item h1 {
   font-size: 45px;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   max-width: 80vw;
 }
 
 .item_info {
   padding-bottom: 20px;
+}
+
+.urgencias_postcontent {
+  padding: 20px;
+  max-width: 80vw;
+}
+
+.urgencias_content {
+  padding: 10px;
+  max-width: 80vw;
 }
