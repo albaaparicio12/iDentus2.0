@@ -27,9 +27,13 @@ export default function Home() {
         setSearch(event.target.value);
     };
 
-    var search_names = list_names.filter((name) => {
-        return (name.toUpperCase().includes(search.toUpperCase())) || (search == "")
-    });
+    if (list_names != null) {
+        var search_names = list_names.filter((name) => {
+            return (name.toUpperCase().includes(search.toUpperCase())) || (search == "")
+        });
+    } else {
+        var search_names = []
+    }
 
     const page_names = []
     for (var i = 0; i < search_names.length; i++) {
