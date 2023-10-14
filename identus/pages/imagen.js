@@ -11,12 +11,11 @@ export default function Home() {
     var list_name = searchParams.get('list_name')
     const back = searchParams.get('back')
     const back_name = searchParams.get('back_name')
-    var stylePics = searchParams.get('stylePics')
 
     const imageElements = []
     for (var i = 1; i <= n_images; i++) {
         imageElements.push(
-            <div className={styles[stylePics]} key={i}>
+            <div className={styles.div_pic} key={i}>
                 <img src={`/${list_name}${i}.png`} alt={i} style={{ top: `${(i - 1) * 700 + 70}px` }} />
             </div>
         )
@@ -32,7 +31,10 @@ export default function Home() {
             </Head>
             <main>
                 <a className={styles.button_back} href={back}>&#65124; {back_name}</a>
-                {imageElements}
+                <div className={styles.pic_container}>
+                    {imageElements}
+                </div>
+
             </main>
         </div>
     )

@@ -37,9 +37,9 @@ function writePosologia(posologia) {
     return (
         <div>
             <h3>Adultos:</h3>
-            <p>{writeList(posologia_adultos)}</p>
+            {writeList(posologia_adultos)}
             <h3>Niños:</h3>
-            <p>{writeList(posologia_niños)}</p>
+            {writeList(posologia_niños)}
         </div>
     )
 
@@ -94,11 +94,11 @@ function writeFarmacos(item) {
             <h1>{item.titulo}</h1>
             <div className={styles.item_info}>
                 <h2>Posología:</h2>
-                <p>{writePosologia(item.posologia)}</p>
+                {writePosologia(item.posologia)}
             </div>
             <div className={styles.item_info}>
                 <h2>Efectos secundarios:</h2>
-                <p>{writeList(item.efectossecundarios)}</p>
+                {writeList(item.efectossecundarios)}
             </div>
             <div className={styles.item_info}>
                 <h2>Embarazo y lactancia:</h2>
@@ -106,10 +106,10 @@ function writeFarmacos(item) {
             </div>
             <div className={styles.item_info}>
                 <h2>Presentaciones comerciales:</h2>
-                <p>{writePresentacionesComerciales(item.presentacionescomerciales)}</p>
+                {writePresentacionesComerciales(item.presentacionescomerciales)}
             </div>
             <div className={styles.item_info}>
-                <p>{writeNotas(item.nota)}</p>
+                {writeNotas(item.nota)}
             </div>
         </div>
     )
@@ -120,13 +120,13 @@ function writeUrgencias(item) {
         <div className={styles.item}>
             <h1>{item.titulo}</h1>
             <div>
-                <p>{writeList(item.precontent)}</p>
+                {writeList(item.precontent)}
             </div>
             <div className={styles.urgencias_content}>
-                <p>{writeUrgenciasContent(item.content)}</p>
+                {writeUrgenciasContent(item.content)}
             </div>
             <div className={styles.urgencias_postcontent}>
-                <p>{writePostContent(item.postcontent)}</p>
+                {writePostContent(item.postcontent)}
             </div>
         </div>
     )
@@ -135,28 +135,28 @@ function writeUrgencias(item) {
 function writeUrgenciasContent(content) {
     if (content != null & content.length > 0) {
         return (
-            content.map((item) => (
+            content.map((item, index) => (
                 <div>
                     <ul name="urgencias">
                         {typeof item === 'object' && !Array.isArray(item) ? (
-                            <li>
+                            <li key={"content" + { index }}>
                                 {item.nivel1}
-                                <ol name="urgencias">
-                                    {item.nivel2.map((item2) => (
+                                <ol key="urgencias-nivel1">
+                                    {item.nivel2.map((item2, index) => (
                                         Array.isArray(item2) ? (
-                                            <ol name="urgencias">
-                                                {item2.map((item3) => (
-                                                    <li>{item3}</li>
+                                            <ol key="urgencias-nivel2">
+                                                {item2.map((item3, index) => (
+                                                    <li key={"content3" + { index }}>{item3}</li>
                                                 ))}
                                             </ol>
                                         ) : (
-                                            <li>{item2}</li>
+                                            <li key={"content2" + { index }}>{item2}</li>
                                         )
                                     ))}
                                 </ol>
                             </li>
                         ) : (
-                            <li>{item}</li>
+                            <li key={"content" + { index }}>{item}</li>
                         )}
                     </ul>
                 </div>
@@ -170,7 +170,7 @@ function writePostContent(content) {
     if (content != null && content.length > 0) {
         return (
             content.map((item) => (
-                <div>
+                <div className={styles.div_pic}>
                     {item.length == 1 ? (
                         <img src={`/urgencias${item}.png`} alt="Urgencias" />
                     ) : (<p>{item}</p>)

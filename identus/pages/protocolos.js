@@ -16,38 +16,38 @@ export default function Home() {
                 <a className={styles.button_back} href='/menu'>&#65124; Menu</a>
                 <div className={styles.farmacosButton}>
                     <Link href={{
-                        pathname: '/imagen',
-                        query: { back: '/menu', back_name: 'Menu', pic_route: '/antiagregado.png', pic_alt: 'Paciente antiagregado', stylePic: "large_pic_object" },
+                        pathname: "/imagen",
+                        query: { back: "/protocolos", back_name: "Protocolos", n_images: 5, list_name: "antiagregado" },
                     }}><button>Paciente antiagregado </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{
-                        pathname: '/imagen',
-                        query: { back: '/menu', back_name: 'Menu', pic_route: '/anticoagulado.png', pic_alt: 'Paciente anticoagulado', stylePic: "large_pic_object" },
+                        pathname: "/imagen",
+                        query: { back: "/protocolos", back_name: "Protocolos", n_images: 4, list_name: "anticoagulado" },
                     }}><button>Paciente anticoagulado </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{
-                        pathname: '/imagen',
-                        query: { back: '/menu', back_name: 'Menu', pic_route: '/cardiopata.png', pic_alt: 'Paciente cardiopata', stylePic: "large_pic_object" },
+                        pathname: "/imagen",
+                        query: { back: "/protocolos", back_name: "Protocolos", n_images: 2, list_name: "cardioepata" },
                     }}><button>Paciente cardiópata </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{
-                        pathname: '/imagen',
-                        query: { back: '/menu', back_name: 'Menu', pic_route: '/diabetico.png', pic_alt: 'Paciente diabético', stylePic: "large_pic_object" },
+                        pathname: "/imagen",
+                        query: { back: "/protocolos", back_name: "Protocolos", n_images: 2, list_name: "diabetico" },
                     }}><button>Paciente diabético </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{
-                        pathname: '/imagen',
-                        query: { back: '/menu', back_name: 'Menu', pic_route: '/endocarditis.png', pic_alt: 'Paciente endocarditis', stylePic: "large_pic_object" },
+                        pathname: "/imagen",
+                        query: { back: "/protocolos", back_name: "Protocolos", n_images: 4, list_name: "endocarditis" },
                     }}><button>Endocarditis bacteriana </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{
-                        pathname: '/imagen',
-                        query: { back: '/menu', back_name: 'Menu', pic_route: '/inmunodeficiencias.png', pic_alt: 'Paciente con inmunodeficiencias', stylePic: "large_pic_object" },
+                        pathname: "/imagen",
+                        query: { back: "/protocolos", back_name: "Protocolos", n_images: 2, list_name: "inmunodeficiencia" },
                     }}><button>Paciente con inmunodeficiencias </button></Link>
                 </div>
             </main>
