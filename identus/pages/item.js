@@ -25,7 +25,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <Link className={styles.button_back} href={back}>&#65124; {capitalize(type_page.toLowerCase())}</Link>
+                <Link className={styles.button_back} href={back}>&#65124; {capitalize(type_page)}</Link>
                 {writePage(type_page, item)}
             </main>
         </div >
@@ -184,5 +184,8 @@ function writePostContent(content) {
 
 
 function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+    if (str != null) {
+        str = str.toLowerCase();
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
 }
