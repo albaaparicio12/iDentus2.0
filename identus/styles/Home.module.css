@@ -213,13 +213,17 @@
   min-height: 100px;
 }
 
-.lista_items {
+.lista_items_div {
   margin-top: 50px;
   height: 70%;
   content: " ";
 }
 
-.item_lista {
+.item_div a {
+  text-decoration: none;
+}
+
+.item_button {
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
