@@ -44,7 +44,6 @@ export default function Home() {
                     query: {
                         page_name: search_names[i],
                         back: window.location.href,
-                        back_name: back_name,
                         type_page: list
                     }
                 }}><button className={styles.item_button}>{search_names[i]}</button></Link>

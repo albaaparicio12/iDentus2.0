@@ -10,14 +10,12 @@ export default function Home() {
 
     const searchParams = useSearchParams()
     const back = searchParams.get('back')
-    const back_name = searchParams.get('back_name')
     const page_name = searchParams.get('page_name')
     const type_page = searchParams.get('type_page')
     const data = type_page == "URGENCIAS" ? urgenciasData.objetos : farmacosData.objetos;
+    const item = []
     if (data != null) {
-        const item = data.find(item => item.titulo === page_name);
-    } else {
-        const item = [];
+        item = data.find(item => item.titulo === page_name);
     }
 
     return (
