@@ -34,23 +34,23 @@ export default function Home() {
     const page_names = []
     for (var i = 0; i < search_names.length; i++) {
         page_names.push(
-            <div key={i}>
+            <div className={styles.item_div} key={i}>
                 <Link href={{
                     pathname: "/item",
                     query: {
                         page_name: search_names[i],
-                        back: back,
+                        back: window.location.href,
                         back_name: back_name,
                         type_page: list
                     }
-                }}><button className={styles.item_lista}>{search_names[i]}</button></Link>
+                }}><button className={styles.item_button}>{search_names[i]}</button></Link>
             </div>
         )
     }
     return (
         <div className={styles.container}>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>iDentus</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -60,7 +60,7 @@ export default function Home() {
                     <a className={styles.button_back} href={back}>&#65124; {back_name}</a>
                     <div className={styles.search_bar}><input id="search_bar" type="text" value={search} placeholder='Escribe aquí...' onChange={handleChange} /></div>
                 </div>
-                <div className={styles.lista_items}>
+                <div className={styles.lista_items_div}>
                     {page_names}
                 </div>
             </main>
