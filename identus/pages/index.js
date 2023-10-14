@@ -20,7 +20,7 @@ export default function Home() {
           <Link href="/menu"><button className={styles.comenzar}> Comenzar </button></Link>
         </div>
         <div className={styles.mainButtons}>
-          <button className={styles.sugerencias}> Buzon de sugerencias </button>
+          <Link href="/sugerencias"><button className={styles.sugerencias}> Buzon de sugerencias </button></Link>
         </div>
       </main>
 
