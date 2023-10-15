@@ -40,10 +40,18 @@ function writePosologia(posologia) {
     var posologia_niños = posologia.ninos
     return (
         <div>
-            <h3>Adultos:</h3>
-            {writeList(posologia_adultos)}
-            <h3>Niños:</h3>
-            {writeList(posologia_niños)}
+            {(posologia_adultos.length > 0) ? (
+                <div>
+                    <h3>Adultos:</h3>
+                    {writeList(posologia_adultos)}
+                </div>
+            ) : (<div></div>)} {/* Si no hay nada no se muestra */}
+            {(posologia_niños.length > 0) ? (
+                <div>
+                    <h3>Niños:</h3>
+                    {writeList(posologia_niños)}
+                </div>
+            ) : (<div></div>)}
         </div>
     )
 
@@ -54,7 +62,7 @@ function writePresentacionesComerciales(presentacionescomerciales) {
         return (
             presentacionescomerciales.map((prestacion) => (
                 <div>
-                    <h3>{prestacion.titulo}:</h3>
+                    {(prestacion.titulo.length > 1) ? (<h3>{prestacion.titulo}:</h3>) : (<div></div>)}
                     {prestacion.pres.map((pre) => (
                         <p>- {pre}</p>
                     ))}
