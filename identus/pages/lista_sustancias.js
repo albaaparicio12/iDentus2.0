@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import { useSearchParams } from 'next/navigation'
@@ -12,6 +11,9 @@ const URGENCIAS = ["RCP", "ATRAGANTAMIENTO", "REACCIÓN ANAFILÁCTICA", "ASMA/EP
 const lists = { "ANALGESICOS": ANALGESICOS, "ANTIBIOTICOS": ANTIBIOTICOS, "CORTICOIDES": CORTICOIDES, "URGENCIAS": URGENCIAS }
 
 export default function Home() {
+    /*
+        lista generalizada de sustancias
+    */
 
     const searchParams = useSearchParams()
     const back = searchParams.get('back')

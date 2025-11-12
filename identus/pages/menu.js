@@ -20,17 +20,17 @@ export default function Home() {
                 </div>
                 <div className={styles.menuButtons}>
                     <Link href={{
-                        pathname: '/lista',
+                        pathname: '/lista_sustancias',
                         query: { list_name: "URGENCIAS", back: '/menu', back_name: 'Menu' }
                     }}><button> <Icon.Virus name='icon' />Urgencias </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
-                    <Link href="/protocolos"><button> <Icon.JournalMedical name='icon' />Protocolos </button></Link>
+                    <Link href="/protocolos/protocolos"><button> <Icon.JournalMedical name='icon' />Protocolos </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
                     <Link href={{
-                        pathname: "/imagen",
-                        query: { back: "/menu", back_name: "Menu", n_images: 2, list_name: "receta", stylePics: "receta_medica" },
+                        pathname: "/item_archivos",
+                        query: { back: "/menu", back_name: "Menu", n_files: 2, list_name: "receta", stylePics: "receta_medica", type: "img" },
                     }}><button> <Icon.Hospital name='icon' />Receta médica</button></Link>
                 </div>
                 <div className={styles.menuButtons}>

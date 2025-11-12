@@ -1,12 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "start": "next start"
+    "build": "sudo next build",
+    "dev": "sudo next dev",
+    "start": "sudo npx serve@latest out"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
     "formik": "^2.4.5",
     "next": "latest",
     "react": "18.2.0",
