@@ -10,11 +10,14 @@ export default function Home() {
 
     const searchParams = useSearchParams()
     const back = searchParams.get('back')
-    const back_name = searchParams.get('back_name')
     const page_name = searchParams.get('page_name')
     const type_page = searchParams.get('type_page')
     const data = type_page == "URGENCIAS" ? urgenciasData.objetos : farmacosData.objetos;
-    const item = data.find(item => item.titulo === page_name);
+    var item = []
+    if (data != null) {
+        {/* comprobación si es null debido pare evitar errores en el build */ }
+        item = data.find(item => item.titulo === page_name);
+    }
 
     return (
         <div className={styles.container}>
@@ -22,10 +25,10 @@ export default function Home() {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>iDentus</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/icon.png" />
             </Head>
             <main>
-                <Link className={styles.button_back} href={back}>&#65124; {capitalize(type_page.toLowerCase())}</Link>
+                <Link className={styles.button_back} href={back ?? '/'}>&#65124; {capitalize(type_page)}</Link> {/* ?? es por si falla la url que te lleva al main */}
                 {writePage(type_page, item)}
             </main>
         </div >
@@ -37,10 +40,18 @@ function writePosologia(posologia) {
     var posologia_niños = posologia.ninos
     return (
         <div>
-            <h3>Adultos:</h3>
-            {writeList(posologia_adultos)}
-            <h3>Niños:</h3>
-            {writeList(posologia_niños)}
+            {(posologia_adultos.length > 0) ? (
+                <div>
+                    <h3>Adultos:</h3>
+                    {writeList(posologia_adultos)}
+                </div>
+            ) : (<div></div>)} {/* Si no hay nada no se muestra */}
+            {(posologia_niños.length > 0) ? (
+                <div>
+                    <h3>Niños:</h3>
+                    {writeList(posologia_niños)}
+                </div>
+            ) : (<div></div>)}
         </div>
     )
 
@@ -51,7 +62,7 @@ function writePresentacionesComerciales(presentacionescomerciales) {
         return (
             presentacionescomerciales.map((prestacion) => (
                 <div>
-                    <h3>{prestacion.titulo}:</h3>
+                    {(prestacion.titulo.length > 1) ? (<h3>{prestacion.titulo}:</h3>) : (<div></div>)}
                     {prestacion.pres.map((pre) => (
                         <p>- {pre}</p>
                     ))}
@@ -90,30 +101,32 @@ function writePage(type_page, item) {
 }
 
 function writeFarmacos(item) {
-    return (
-        <div className={styles.item}>
-            <h1>{item.titulo}</h1>
-            <div className={styles.item_info}>
-                <h2>Posología:</h2>
-                {writePosologia(item.posologia)}
+    if (item != null) {
+        return (
+            <div className={styles.item}>
+                <h1>{item.titulo}</h1>
+                <div className={styles.item_info}>
+                    <h2>Posología:</h2>
+                    {writePosologia(item.posologia)}
+                </div>
+                <div className={styles.item_info}>
+                    <h2>Efectos secundarios:</h2>
+                    {writeList(item.efectossecundarios)}
+                </div>
+                <div className={styles.item_info}>
+                    <h2>Embarazo y lactancia:</h2>
+                    <p>{item.embarazo}</p>
+                </div>
+                <div className={styles.item_info}>
+                    <h2>Presentaciones comerciales:</h2>
+                    {writePresentacionesComerciales(item.presentacionescomerciales)}
+                </div>
+                <div className={styles.item_info}>
+                    {writeNotas(item.nota)}
+                </div>
             </div>
-            <div className={styles.item_info}>
-                <h2>Efectos secundarios:</h2>
-                {writeList(item.efectossecundarios)}
-            </div>
-            <div className={styles.item_info}>
-                <h2>Embarazo y lactancia:</h2>
-                <p>{item.embarazo}</p>
-            </div>
-            <div className={styles.item_info}>
-                <h2>Presentaciones comerciales:</h2>
-                {writePresentacionesComerciales(item.presentacionescomerciales)}
-            </div>
-            <div className={styles.item_info}>
-                {writeNotas(item.nota)}
-            </div>
-        </div>
-    )
+        )
+    }
 }
 
 function writeUrgencias(item) {
@@ -138,7 +151,7 @@ function writeUrgenciasContent(content) {
         return (
             content.map((item, index) => (
                 <div>
-                    <ul name="urgencias">
+                    <ul name="urgencias"> {/* Si es un array o un dict es que es una lista de varios niveles */}
                         {typeof item === 'object' && !Array.isArray(item) ? (
                             <li key={"content" + { index }}>
                                 {item.nivel1}
@@ -184,5 +197,8 @@ function writePostContent(content) {
 
 
 function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+    if (str != null) {
+        str = str.toLowerCase(); {/* Nombre del botón atras, se saca del mismo nombre del array de item y por eso se tiene que capitalizar */ }
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
 }

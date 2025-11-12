@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import emailjs from "@emailjs/browser";
-import configData from "../configData.json";
 import { useState } from 'react';
 
 export default function Home() {
@@ -13,12 +12,12 @@ export default function Home() {
     }
 
     const initEmail = () => {
-        emailjs.init(configData.PUBLIC_ID);
+        emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
     };
 
     const sendEmail = (message) => {
         emailjs
-            .send(configData.SERVICE_ID, configData.TEMPLATE_ID, {
+            .send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, {
                 message: message,
             })
             .then(
@@ -43,7 +42,7 @@ export default function Home() {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>iDentus</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/icon.png" />
             </Head>
 
             <div className={styles.container}>

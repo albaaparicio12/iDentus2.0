@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import { useSearchParams } from 'next/navigation'
@@ -12,12 +11,15 @@ const URGENCIAS = ["RCP", "ATRAGANTAMIENTO", "REACCIÓN ANAFILÁCTICA", "ASMA/EP
 const lists = { "ANALGESICOS": ANALGESICOS, "ANTIBIOTICOS": ANTIBIOTICOS, "CORTICOIDES": CORTICOIDES, "URGENCIAS": URGENCIAS }
 
 export default function Home() {
+    /*
+        lista generalizada de sustancias
+    */
 
     const searchParams = useSearchParams()
     const back = searchParams.get('back')
     const back_name = searchParams.get('back_name')
-    var list = searchParams.get('list_name')
-    var list_names = lists[list]
+    const list = searchParams.get('list_name')
+    const list_names = lists[list]
 
     /*
         Barra de búsqueda
@@ -27,9 +29,13 @@ export default function Home() {
         setSearch(event.target.value);
     };
 
-    var search_names = list_names.filter((name) => {
-        return (name.toUpperCase().includes(search.toUpperCase())) || (search == "")
-    });
+    if (list_names != null) {
+        var search_names = list_names.filter((name) => {
+            return (name.toUpperCase().includes(search.toUpperCase())) || (search == "")
+        });
+    } else {
+        var search_names = []
+    }
 
     const page_names = []
     for (var i = 0; i < search_names.length; i++) {
@@ -40,10 +46,9 @@ export default function Home() {
                     query: {
                         page_name: search_names[i],
                         back: window.location.href,
-                        back_name: back_name,
                         type_page: list
                     }
-                }}><button className={styles.item_button}>{search_names[i]}</button></Link>
+                }}><button className={styles.item_button}>{search_names[i]}</button></Link> {/* window.location.href para volver a la url con unos searchparams específicos. Sólo funciona con link, con <a> no. */}
             </div>
         )
     }
@@ -53,7 +58,7 @@ export default function Home() {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>iDentus</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/icon.png" />
             </Head>
             <main>
                 <div className={styles.top_bar}>
