@@ -18,7 +18,7 @@ export default function Home() {
                     <Link href="/protocolos/protocolos_adultos"><button>Protocolos adultos </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
-                    <Link href="/protocolos/protocolos_infantil"><button>Protocolos infantiles </button></Link>
+                    <Link href="/protocolos/protocolos_infantil"><button>Protocolos infantil </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{

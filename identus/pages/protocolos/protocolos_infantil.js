@@ -21,10 +21,7 @@ export default function Home() {
                     }}><button>Cirugía </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
-                    <Link href={{
-                        pathname: "/item_archivos",
-                        query: { back: "/protocolos/protocolos_infantil", back_name: "Protocolos Infantil", list_name: "infantil_conservadora", n_files: 2, type: "pdf" },
-                    }}><button>Conservadora </button></Link>
+                    <Link href="/protocolos/conservadora_infantil"><button>Conservadora </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{

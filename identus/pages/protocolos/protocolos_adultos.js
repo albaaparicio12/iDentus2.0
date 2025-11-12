@@ -15,10 +15,7 @@ export default function Home() {
             <main>
                 <a className={styles.button_back} href='/protocolos/protocolos'>&#65124; Protocolos</a>
                 <div className={styles.farmacosButton}>
-                    <Link href={{
-                        pathname: "/item_archivos",
-                        query: { back: "/protocolos/protocolos_adultos", back_name: "Protocolos Adultos", list_name: "adultos_cirugia", n_files: 6, type: "pdf" },
-                    }}><button>Cirugía </button></Link>
+                    <Link href="/protocolos/cirugia"><button>Cirugía </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href="/protocolos/conservadora"><button>Conservadora </button></Link>
@@ -36,16 +33,10 @@ export default function Home() {
                     }}><button>Flujo digital </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
-                    <Link href={{
-                        pathname: "/item_archivos",
-                        query: { back: "/protocolos/protocolos_adultos", back_name: "Protocolos Adultos", list_name: "adultos_periodoncia", n_files: 6, type: "pdf" },
-                    }}><button>Periodoncia </button></Link>
+                    <Link href="/protocolos/periodoncia"><button>Periodoncia </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
-                    <Link href={{
-                        pathname: "/item_archivos",
-                        query: { back: "/protocolos/protocolos_adultos", back_name: "Protocolos Adultos", list_name: "adultos_protesis", n_files: 3, type: "pdf" },
-                    }}><button>Protesis </button></Link>
+                    <Link href="/protocolos/protesis"><button>Protesis </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
                     <Link href={{
