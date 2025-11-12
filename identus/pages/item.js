@@ -25,7 +25,7 @@ export default function Home() {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>iDentus</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/icon.png" />
             </Head>
             <main>
                 <Link className={styles.button_back} href={back ?? '/'}>&#65124; {capitalize(type_page)}</Link> {/* ?? es por si falla la url que te lleva al main */}
