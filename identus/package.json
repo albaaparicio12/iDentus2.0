@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "sudo next build",
-    "dev": "sudo next dev",
-    "start": "sudo npx serve@latest out"
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
