@@ -30,7 +30,7 @@ yarn-error.log*
 .env.production.local
 
 # secret keys
-configData.json
+.env.local
 
 .netlify
 readme_do_not_commit.txt
