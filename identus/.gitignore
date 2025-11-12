@@ -31,3 +31,6 @@ yarn-error.log*
 
 # secret keys
 configData.json
+
+.netlify
+readme_do_not_commit.txt
