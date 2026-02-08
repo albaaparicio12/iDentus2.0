@@ -23,7 +23,7 @@ export default function Home() {
                 <div className={styles.farmacosButton}>
                     <Link href={{
                         pathname: "/item_archivos",
-                        query: { back: "/protocolos/conservadora", back_name: "Conservadora", list_name: "blanqueamiento", n_files: 2, type: "pdf" },
+                        query: { back: "/protocolos/conservadora", back_name: "Conservadora", list_name: "blanqueamiento", n_files: 1, type: "pdf" },
                     }}><button>Blanqueamiento </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
