@@ -27,6 +27,8 @@ export default function Home() {
                 <title>iDentus</title>
                 <link rel="icon" href="/icon.png" />
             </Head>
+            {/* Google tag (gtag.js) */}
+            <GoogleAnalytics gaId={process.env.GA_ID} />
             <main>
                 <Link className={styles.button_back} href={back ?? '/'}>&#65124; {capitalize(type_page)}</Link> {/* ?? es por si falla la url que te lleva al main */}
                 {writePage(type_page, item)}

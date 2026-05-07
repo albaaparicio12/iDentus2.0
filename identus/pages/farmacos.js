@@ -11,6 +11,8 @@ export default function Home() {
                 <title>iDentus</title>
                 <link rel="icon" href="/icon.png" />
             </Head>
+            {/* Google tag (gtag.js) */}
+            <GoogleAnalytics gaId={process.env.GA_ID} />
 
             <main>
                 <a className={styles.button_back} href="/menu">&#65124; Menu</a>
