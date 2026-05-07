@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '/styles/Home.module.css';
 import Link from 'next/link'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function Home() {
     return (
@@ -11,6 +12,8 @@ export default function Home() {
                 <title>iDentus</title>
                 <link rel="icon" href="/icon.png" />
             </Head>
+            {/* Google tag (gtag.js) */}
+            <GoogleAnalytics gaId={process.env.GA_ID} />
 
             <main>
                 <a className={styles.button_back} href='/protocolos/protocolos_adultos'>&#65124; Protocolos Adultos</a>

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import * as Icon from 'react-bootstrap-icons';
 import Link from 'next/link'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function Home() {
     return (
@@ -12,6 +13,8 @@ export default function Home() {
                 <title>iDentus</title>
                 <link rel="icon" href="/icon.png" />
             </Head>
+            {/* Google tag (gtag.js) */}
+            <GoogleAnalytics gaId={process.env.GA_ID} />
 
             <main>
                 <a className={styles.button_back} href='/'>&#65124; Inicio</a>

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { useState } from 'react';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const ANALGESICOS = ["PARACETAMOL", "IBUPROFENO", "NAPROXENO", "DEKETOPROXENO", "DICLOFENACO", "METAMIZOL", "TRAMADOL/PARACETAMOL"]
 const ANTIBIOTICOS = ["AMOXICILINA", "AMOXICILINA/ÁCIDO CLAVULÁNICO", "CLINDAMICINA", "ESPIRAMICINA/METRONIDAZOL", "AZITROMICINA", "CIPROFLOXACINO"]
@@ -60,6 +61,8 @@ export default function Home() {
                 <title>iDentus</title>
                 <link rel="icon" href="/icon.png" />
             </Head>
+            {/* Google tag (gtag.js) */}
+            <GoogleAnalytics gaId={process.env.GA_ID} />
             <main>
                 <div className={styles.top_bar}>
                     <a className={styles.button_back} href={back}>&#65124; {back_name}</a>
