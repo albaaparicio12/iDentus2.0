@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
-import Link from 'next/link'
+import Link from 'next/link';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { useSearchParams } from 'next/navigation';
 import farmacosData from './data_structured/farmacos.json';
 import urgenciasData from './data_structured/urgencias.json';

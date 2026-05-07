@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import { version as pdfjsVersion } from 'pdfjs-dist/package.json';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 // Dynamically import to prevent SSR (Server Side Rendering) issues
 // Ya que next.js no soporta el uso de window en SSR, y react-pdf-viewer lo usa para cargar los PDFs

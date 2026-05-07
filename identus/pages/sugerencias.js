@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import emailjs from "@emailjs/browser";
 import { useState } from 'react';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function Home() {
     const [message, setMessage] = useState("");

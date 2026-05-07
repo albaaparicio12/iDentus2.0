@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import styles from '/styles/Home.module.css';
 
 export default function Home() {

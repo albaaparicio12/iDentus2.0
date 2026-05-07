@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { useState } from 'react';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const ANALGESICOS = ["PARACETAMOL", "IBUPROFENO", "NAPROXENO", "DEKETOPROXENO", "DICLOFENACO", "METAMIZOL", "TRAMADOL/PARACETAMOL"]
 const ANTIBIOTICOS = ["AMOXICILINA", "AMOXICILINA/ÁCIDO CLAVULÁNICO", "CLINDAMICINA", "ESPIRAMICINA/METRONIDAZOL", "AZITROMICINA", "CIPROFLOXACINO"]
