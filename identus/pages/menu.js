@@ -40,6 +40,9 @@ export default function Home() {
                     <Link href="/comerciales"><button> <Icon.Cart2 name='icon' />Casas comerciales </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
+                    <Link href="https://www.youtube.com/@CLUO-Uniovi"><button> <Icon.PlayBtn name='icon' />Píldoras de información </button></Link>
+                </div>
+                <div className={styles.menuButtons}>
                     <Link href="https://docdro.id/w7BAd3o"><button> <Icon.Files name='icon' />Formación de postgrado </button></Link>
                 </div>
             </main>
