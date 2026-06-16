@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import emailjs from "@emailjs/browser";
 import { useState } from 'react';
-import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 export default function Home() {
     const [message, setMessage] = useState("");
@@ -45,8 +45,6 @@ export default function Home() {
                 <title>iDentus</title>
                 <link rel="icon" href="/icon.png" />
             </Head>
-            {/* Google tag (gtag.js) */}
-            <GoogleAnalytics gaId={process.env.GA_ID} />
 
             <div className={styles.container}>
                 <a className={styles.button_back} href='/'>&#65124; Inicio</a>
