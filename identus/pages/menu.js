@@ -23,8 +23,8 @@ export default function Home() {
                 </div>
                 <div className={styles.menuButtons}>
                     <Link href={{
-                        pathname: '/lista_sustancias',
-                        query: { list_name: "URGENCIAS", back: '/menu', back_name: 'Menu' }
+                        pathname: "/item_archivos",
+                        query: { back: "/menu", back_name: "Menu", list_name: "urgencias_odontologicas", n_files: 1, type: "pdf" },
                     }}><button> <Icon.Virus name='icon' />Urgencias </button></Link>
                 </div>
                 <div className={styles.menuButtons}>
