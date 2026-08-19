@@ -40,12 +40,6 @@ export default function Home() {
                 <div className={styles.farmacosButton}>
                     <Link href="/protocolos/protesis"><button>Protesis </button></Link>
                 </div>
-                <div className={styles.farmacosButton}>
-                    <Link href={{
-                        pathname: "/item_archivos",
-                        query: { back: "/protocolos/protocolos_adultos", back_name: "Protocolos Adultos", list_name: "adultos_urgencias_medicas", n_files: 1, type: "pdf" },
-                    }}><button>Urgencias Médicas en Clínica Dental </button></Link>
-                </div>
             </main>
 
         </div>
