@@ -34,6 +34,12 @@ export default function Home() {
                         query: { back: "/protocolos/protesis", back_name: "Protesis", list_name: "adultos_protesis3", n_files: 1, type: "pdf" },
                     }}><button>Protocolo de protesis parcial removible </button></Link>
                 </div>
+                <div className={styles.farmacosButton}>
+                    <Link href={{
+                        pathname: "/item_archivos",
+                        query: { back: "/protocolos/protesis", back_name: "Protesis", list_name: "adultos_protesis4", n_files: 1, type: "pdf" },
+                    }}><button>Protocolo de incrustaciones </button></Link>
+                </div>
             </main>
 
         </div>
