@@ -20,6 +20,12 @@ export default function Home() {
                     <Link href="/protocolos/cirugia"><button>Cirugía </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
+                    <Link href={{
+                        pathname: "/item_archivos",
+                        query: { back: "/protocolos/protocolos_adultos", back_name: "Protocolos Adultos", list_name: "adultos_anestesia", n_files: 1, type: "pdf" },
+                    }}><button>Anestesia </button></Link>
+                </div>
+                <div className={styles.farmacosButton}>
                     <Link href="/protocolos/conservadora"><button>Conservadora </button></Link>
                 </div>
                 <div className={styles.farmacosButton}>
